@@ -11,3 +11,17 @@ btn.addEventListener("click", function() {
     btn.textContent= rgb; 
     bg.style.backgroundColor = rgb
 })
+
+
+function btnFunc() {
+
+    let x = Math.floor(Math.random() * 100 + 90)
+    let y = Math.floor(Math.random() * 100 + 90)
+
+    btn.style.borderRadius = `${x}px ${y}px`
+
+}
+
+setInterval(function() {
+    btnFunc();
+}, 500)
