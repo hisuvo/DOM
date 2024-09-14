@@ -30,4 +30,4 @@ const stack = document.querySelectorAll("#full_stack #list li"); //Node list
 
 // option-5:
 const programLang = document.getElementById("programm_lang") // only one item get that i want
-console.log(programLang)
+// console.log(programLang)
