@@ -24,4 +24,4 @@ function btnFunc() {
 
 setInterval(function() {
     btnFunc();
-}, 500)
+}, 500);
