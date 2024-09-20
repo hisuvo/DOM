@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <!-- DaisyUi and Tailwind css CMD link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main class="flex justify-center py-10">
+        <div class="p-10  space-y-6 rounded-xl shadow-xl border">
+            <div class="flex justify-center">
+                <img src="./assets/logo.png" alt="bank logo">
+            </div>
+            <!-- login Fonm -->
+             <form id="login_form" class="px-10 py-12 bg-slate-100 space-y-4 rounded-lg">
+                <p id="mobile_number" class="space-y-2">
+                    <label class="text-lg font-semibold" for="text">Mobile Number</label> <br>
+                    <input type="text" name="text" class="p-2 rounded-sm border border-black" id="input_mobile_number" placeholder="Enter your number">
+                </p>
+
+                <p id="pin_number" class="space-y-2">
+                    <label class="text-lg font-semibold" for="password">4 Digit Pin</label> <br>
+                    <input type="password" autocomplete="off" name="password" id="input_pin" class="p-2 rounded-sm border border-black" placeholder="Enter 4 Digit Pin">
+                </p>
+                <p><button class="w-full bg-blue-500 py-2 rounded hover:bg-blue-600 text-white font-semibold">LongIn</button></p>
+             </form>
+        </div>
+    </main>
+    
+    <script src="./js/login.js"></script>
+</body>
+</html>

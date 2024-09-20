@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Font Awsome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- DaisyUi and Tailwind css CMD link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="max-w-sm mx-auto border">
+    <header class="flex justify-between items-center border-b-2 p-2">
+        <!-- logo and balance part -->
+        <div id="balance" class="flex justify-center items-center gap-2">
+            <!-- logo section -->
+            <div>
+                <img src="./assets/logo-sm.png" alt="Payoo bank logo">
+            </div>
+            <!-- Balance section --> 
+            <div>
+                <h3 class="text-lg font-bold"> $ <span id="current_balance">45000</span> </h3>
+                <p class="text-base">Available Balance</p>
+            </div>
+        </div>
+        <!-- log out section -->
+        <p id="login_out" class="border-2 rounded-lg px-4 py-2 hover:bg-blue-400 hover:text-white">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <button id="log_out_button">Log Out</button>
+        </p>
+    </header>
+
+   <main>
+    <!-- welcome section -->
+     <section class="pt-8 space-y-3 p-2">
+        <h2 class="text-2xl font-bold">🔥 Welcome to Payooo!</h2>
+        <p class="text-base">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+     </section>
+
+    <!-- service section -->
+     <section class="py-6  grid grid-cols-3 gap-5 text-center text-[14px] p-2" >
+        <!-- add money card -->
+        <div class="flex flex-col justify-center items-center p-4  border rounded-md">
+            <p><img src="./assets/add_money.png" alt="add money"></p>
+            <p>Add Money</p>
+        </div>
+
+        <!-- cash out card -->
+        <div class="flex flex-col justify-center items-center p-4  border rounded-md">
+            <p><img src="./assets/cash_out.png" alt="cash out"></p>
+            <p>CashOut</p>
+        </div>
+
+        <!-- Transform moeny -->
+        <div class="flex flex-col justify-center items-center p-4  border rounded-md">
+            <p><img src="./assets/transfer.png" alt="Transfer Money"></p>
+            <p>Transfer</p>
+        </div>
+
+        <!-- Get Bonus -->
+        <div class="flex flex-col justify-center items-center p-4  border rounded-md">
+            <p><img src="./assets/get_bonus.png" alt="Get Bonus"></p>
+            <p>Get Bonus</p>
+        </div>
+
+        <!-- Pay Bill -->
+        <div class="flex flex-col justify-center items-center p-4  border rounded-md">
+            <p><img src="./assets/pay_bill.png" alt="Pay Bill"></p>
+            <p>Pay Bill</p>
+        </div>
+
+        <!-- Transactions -->
+        <div class="flex flex-col justify-center items-center p-4  border rounded-md">
+            <p><img src="./assets/transactions.png" alt="Transactions"></p>
+            <p>Transactions</p>
+        </div>
+
+        
+     </section>
+
+    <!-- latest payment section -->
+     <section class="hidden py-8 px-0 bg-slate-100">
+        <div class="flex justify-between items-center p-2">
+            <h2 class="text-lg font-semibold">Latest Payment</h2>
+            <p class=""><button>view all</button></p>
+        </div>
+
+        <div class="divider"></div>
+        
+        <div id="latest_payment_hestory" class="space-y-3 p-2">
+            <div class="flex items-center gap-3 p-3 bg-slate-50 shadow-lg">
+                <p><img src="./assets/add_money.png" alt=""></p>
+                <div>
+                    <h4 class="text-[1rem]">Mobile Research</h4>
+                    <p class="text-[12px]">Today 10.30AM</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 p-3 bg-slate-50 shadow-lg">
+                <p><img src="assets/add_money.png" alt=""></p>
+                <div>
+                    <h4 class="text-[1rem]">Electricity Bill</h4>
+                    <p class="text-[12px]">Today 11.20AM</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 p-3 bg-slate-50 shadow-lg">
+                <p><img src="/assets/add_money.png" alt=""></p>
+                <div>
+                    <h4 class="text-[1rem]">Bank Deposit</h4>
+                    <p class="text-[12px]">Today 12.30PM</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Add money form -->
+     <section></section>
+
+    <!-- Cash Out form -->
+     <section></section>
+
+    <!-- Transform money form -->
+     <section></section>
+
+    <!-- Get bonus form -->
+     <section></section>
+
+    <!-- Pay Bill form -->
+     <section></section>
+
+    <!-- Transaction Hostory -->
+     <section></section>
+
+   </main>
+</body>
+</html>
